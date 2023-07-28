@@ -52,6 +52,7 @@ t_{\mathrm{TTC}} = \left\{
 \text{Undefined}, & \tilde{v}_{x, 0}^2-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0} < 0 .
 \end{array}
 \right.
+```
 
 Thus, $t_{\mathrm{TTC}}$ is given by the smallest positive solution. If $\tilde{v}_{x, 0}^2 - 2 \tilde{p}_{x, 0} \tilde{a}_{x, 0} < 0$ or $(\tilde{v}_{x, 0} \geq 0$ $\tilde{a}_{x, 0} \geq 0)$, no solution exists. This means that the velocity and acceleration are such that no collision occurs.
 
