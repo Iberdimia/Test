@@ -33,16 +33,16 @@ It calculates the time required for two vehicles ($A_1$ and $A_2$) to collide if
 The time to collision $\(t_{\mathrm{TTC}}\)$ is defined as follows:
 
 $$
-t_{\mathrm{TTC}}={sol}_t\{\tilde{p}_x(t)=0\}
+t_{\mathrm{TTC}} = \text{sol}_t\left[ \tilde{p}_x(t) = 0 \right]
 $$
 
 When calculating the time to collision, the relative acceleration is often assumed to be constant. With a constant acceleration decision model of the vehicle's motion, the solution to equation above reduces to solving:
 
-$0 = \tilde{p}{x, 0} + \tilde{v}{x, 0} t + \frac{\tilde{a}_{x, 0} t^2}{2}$
+$$0 = \tilde{p}{x, 0} + \tilde{v}{x, 0} t + \frac{\tilde{a}_{x, 0} t^2}{2}$$
 
 The solution for $t_{\mathrm{TTC}}$ is given by:
 
-$$
+$$\begin{equation}
 t_{\mathrm{TTC}}=\left\{\begin{array}{ccc}
 -\frac{\tilde{p}_{x, 0}}{\tilde{v}_{x, 0}}, & \tilde{v}_{x, 0}<0 \quad \text { and } \quad \tilde{a}_{x, 0}=0, \\
 -\frac{\tilde{v}_{x, 0}}{\tilde{a}_{x, 0}-\frac{\sqrt{\tilde{v}_{x, 0}-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0}}}{\tilde{a}_{x, 0}},}, & \tilde{v}_{x, 0}<0 \quad \text { and } \quad \tilde{a}_{x, 0} \neq 0, \\
@@ -50,7 +50,7 @@ t_{\mathrm{TTC}}=\left\{\begin{array}{ccc}
 \text { Undefined } & \tilde{v}_{x, 0} \geq 0 \quad \text { and } \quad \tilde{a}_{x, 0} \geq 0, \\
 \text { Undefined } & \tilde{v}_{x, 0}^2-2 \tilde{p}_{x, 0} \tilde{a}<0 .
 \end{array}\right.
-$$
+\end{equation}$$
 
 Thus, $t_{\mathrm{TTC}}$ is given by the smallest positive solution. If $\tilde{v}_{x, 0}^2 - 2 \tilde{p}_{x, 0} \tilde{a}_{x, 0} < 0$ or $(\tilde{v}_{x, 0} \geq 0$ $\tilde{a}_{x, 0} \geq 0)$, no solution exists. This means that the velocity and acceleration are such that no collision occurs.
 
