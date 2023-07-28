@@ -45,7 +45,7 @@ The time to collision :math:`t_{\mathrm{TTC}}` is defined as follows:
 
 .. math::
 
-   t_{\mathrm{TTC}} = \operatorname{sol}_t\left\{ \tilde{p}_x(t) = 0 \right\}
+   $t_{\mathrm{TTC}} = \operatorname{sol}_t\left\{ \tilde{p}_x(t) = 0 \right\}$
 
 When calculating the time to collision, the relative acceleration is often assumed to be constant according to equation (5.17b). With a constant acceleration decision model of the vehicle's motion, the solution to equation (5.24) reduces to solving:
 
