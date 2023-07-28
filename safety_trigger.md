@@ -20,9 +20,9 @@ For constant acceleration scenarios, the concept of ALongReq is also known as De
 $$a_{\text{long, req}}(A_1, A_2, t) = \min \left( a_{2, \text{long}} + \frac{(v_{1, \text{long}}(t) - v_{2, \text{long}}(t))^2}{2d(p_1(t), p_2(t))}, 0 \right)$$
 
 Where:
-- $\(a_{1, \text{long}}\) and \(a_{2, \text{long}}\)$ are the longitudinal accelerations of actors A_1 and A_2, respectively.
-- $\(v_{1, \text{long}}(t)\) and \(v_{2, \text{long}}(t)\)$ are the longitudinal velocities of A_1 and A_2 at time t, respectively.
-- $\(d(p_1(t), p_2(t))\)$ is the distance between A_1 and A_2 at time t.
+- $a_{1, \text{long}}$ and $a_{2, \text{long}}$ are the longitudinal accelerations of actors $A_1$ and $A_2$, respectively.
+- $v_{1, \text{long}}(t)$ and $v_{2, \text{long}}(t)$ are the longitudinal velocities of $A_1$ and $A_2$ at time $t$, respectively.
+- $d(p_1(t), p_2(t))$ is the distance between $A_1$ and $A_2$ at time $t$.
 
 
 ## Metric 2: Time To Collision (TTC)
