@@ -28,11 +28,11 @@ Where:
 ## Metric 2: Time To Collision (TTC)
 
 Time To Collision (TTC) is the second risk metric used to trigger a recording when a collision is likely.
-It calculates the time required for two vehicles (A_1 and A_2) to collide if they continue on their present speed and path. The TTC is defined as:
+It calculates the time required for two vehicles ($A_1$ and $A_2$) to collide if they continue on their present speed and path. The TTC is defined as:
 
 The time to collision $\(t_{\mathrm{TTC}}\)$ is defined as follows:
 
-$t_{\mathrm{TTC}} = \operatorname{sol}_t\left{ \tilde{p}_x(t) = 0 \right}$
+$t_{\mathrm{TTC}} = sol_t\left{ \tilde{p}_x(t) = 0 \right}$
 
 When calculating the time to collision, the relative acceleration is often assumed to be constant. With a constant acceleration decision model of the vehicle's motion, the solution to equation above reduces to solving:
 
