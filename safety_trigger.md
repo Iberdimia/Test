@@ -41,6 +41,7 @@ When calculating the time to collision, the relative acceleration is often assum
 $$0 = \tilde{p}{x, 0} + \tilde{v}{x, 0} t + \frac{\tilde{a}_{x, 0} t^2}{2}$$
 
 The solution for $t_{\mathrm{TTC}}$ is given by:
+
 $$
 t_{\mathrm{TTC}} =
 \begin{array}{ccc}
