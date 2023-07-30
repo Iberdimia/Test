@@ -41,11 +41,12 @@ When calculating the time to collision, the relative acceleration is often assum
 $$0 = \tilde{p}{x, 0} + \tilde{v}{x, 0} t + \frac{\tilde{a}_{x, 0} t^2}{2}$$
 
 The solution for $t_{\mathrm{TTC}}$ is given by:
-$$\eqalign{
+$$
+\eqalign{
 (a-b)^2 &= (a-b)(a-b) \\
         &= a^2 - ab - ba + b^2 \\
         &= a^2 - 2ab + b^2
-}$$
+        }$$
 
 
 
