@@ -47,14 +47,6 @@ $$\eqalign{
         &= a^2 - 2ab + b^2
 }$$
 
-$$\eqalign{
-t_{\mathrm{TTC}}&=
-              -\frac{\tilde{p}_{x, 0}}{\tilde{v}_{x, 0}}, & \tilde{v}_{x, 0}<0 \quad \text{and} \quad \tilde{a}_{x, 0}=0, \\
-              -\frac{\tilde{v}_{x, 0}}{\tilde{a}_{x, 0}-\frac{\sqrt{\tilde{v}_{x, 0}-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0}}}{\tilde{a}_{x, 0}}},                   & \tilde{v}_{x, 0}<0 \quad \text{and} \quad \tilde{a}_{x, 0} \neq 0, \\
-              -\frac{\tilde{v}_{x, 0}}{\tilde{a}_{x, 0}}+\frac{\sqrt{\tilde{v}_{x, 0}^2-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0}}}{\tilde{a}_{x, 0}}, & \tilde{v}_{x, 0} \geq 0 \quad \text{and} \quad \tilde{a}_{x, 0}<0, \\
-\text{Undefined}, & \tilde{v}_{x, 0} \geq 0 \quad \text{and} \quad \tilde{a}_{x, 0} \geq 0, \\
-\text{Undefined}, & \tilde{v}_{x, 0}^2-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0} < 0 .
-}$$
 
 
 Thus, $t_{\mathrm{TTC}}$ is given by the smallest positive solution. 
