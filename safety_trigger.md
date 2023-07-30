@@ -48,8 +48,7 @@ $`\eqalign{ t_{\mathrm{TTC}}
 &=-\frac{\tilde{v}_{x, 0}}{\tilde{a}_{x, 0}}+\frac{\sqrt{\tilde{v}_{x, 0}^2-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0}}}{\tilde{a}_{x, 0}} \\
 &=\text{Undefined},\\
 &=\text{Undefined}
-}`$
-
+}
 \qquad
 \eqalign{
 \tilde{v}_{x, 0}<0 \quad \text{and} \quad \tilde{a}_{x, 0}=0, \\
@@ -58,6 +57,9 @@ $`\eqalign{ t_{\mathrm{TTC}}
 \tilde{v}_{x, 0} \geq 0 \quad \text{and} \quad \tilde{a}_{x, 0} \geq 0 \\ 
 \tilde{v}_{x, 0}^2-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0} < 0 
 }
+`$
+
+
 
 Thus, $t_{\mathrm{TTC}}$ is given by the smallest positive solution. 
 If $`\tilde{v}_{x, 0}^2 - 2 \tilde{p}_{x, 0}\tilde{a}_{x, 0} < 0`$ or $`(\tilde{v}_{x, 0} \geq 0`$ and $`\tilde{a}_{x, 0} \geq 0)`$, no solution exists. This means that the velocity and acceleration are such that no collision occurs.
