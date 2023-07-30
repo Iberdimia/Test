@@ -41,10 +41,20 @@ When calculating the time to collision, the relative acceleration is often assum
 $$0 = \tilde{p}{x, 0} + \tilde{v}{x, 0} t + \frac{\tilde{a}_{x, 0} t^2}{2}$$
 
 The solution for $t_{\mathrm{TTC}}$ is given by:
-
+\begin{equation}
+t_{\mathrm{TTC}} = \left\{
+\begin{array}{ccc}
+-\frac{\tilde{p}_{x, 0}}{\tilde{v}_{x, 0}}, & \tilde{v}_{x, 0}<0 \quad \text{and} \quad \tilde{a}_{x, 0}=0, \\
+-\frac{\tilde{v}_{x, 0}}{\tilde{a}_{x, 0}-\frac{\sqrt{\tilde{v}_{x, 0}-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0}}}{\tilde{a}_{x, 0}}}, & \tilde{v}_{x, 0}<0 \quad \text{and} \quad \tilde{a}_{x, 0} \neq 0, \\
+-\frac{\tilde{v}_{x, 0}}{\tilde{a}_{x, 0}}+\frac{\sqrt{\tilde{v}_{x, 0}^2-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0}}}{\tilde{a}_{x, 0}}, & \tilde{v}_{x, 0} \geq 0 \quad \text{and} \quad \tilde{a}_{x, 0}<0, \\
+\text{Undefined}, & \tilde{v}_{x, 0} \geq 0 \quad \text{and} \quad \tilde{a}_{x, 0} \geq 0, \\
+\text{Undefined}, & \tilde{v}_{x, 0}^2-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0} < 0 .
+\end{array}
+\right.
+\end{equation}
 
 Thus, $t_{\mathrm{TTC}}$ is given by the smallest positive solution. 
-If $\tilde{v}_{x, 0}^2 - 2 \tilde{p}_{x, 0}\tilde{a}_{x, 0} < 0$ or $(\tilde{v}_{x, 0} \geq 0$ and $\tilde{a}_{x, 0} \geq 0)$, no solution exists. This means that the velocity and acceleration are such that no collision occurs.
+If $`\tilde{v}_{x, 0}^2 - 2 \tilde{p}_{x, 0}\tilde{a}_{x, 0} < 0`$ or $`(\tilde{v}_{x, 0} \geq 0`$ and $`\tilde{a}_{x, 0} \geq 0)`$, no solution exists. This means that the velocity and acceleration are such that no collision occurs.
 
 Please note that for some cases where the relative velocity or acceleration values are such that no collision is expected, no solution exists for the TTC calculation.
 In some cases the TTC is negative if the preceding vehicle's speed is higher than that of the following vehicle. In this case, there is no crash risk.
