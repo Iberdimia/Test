@@ -49,7 +49,7 @@ $`\eqalign{ t_{\mathrm{TTC}}
 &=\text{Undefined},\\
 &=\text{Undefined}
 }
-\qquad
+\quad
 \eqalign{
 \tilde{v}_{x, 0}<0 \quad \text{and} \quad \tilde{a}_{x, 0}=0, \\
 \tilde{v}_{x, 0}<0 \quad \text{and} \quad \tilde{a}_{x, 0} \neq 0\\
