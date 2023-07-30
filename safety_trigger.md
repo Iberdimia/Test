@@ -42,10 +42,12 @@ $$0 = \tilde{p}{x, 0} + \tilde{v}{x, 0} t + \frac{\tilde{a}_{x, 0} t^2}{2}$$
 
 The solution for $t_{\mathrm{TTC}}$ is given by:
 
-$`\eqalign{
-(a+b)^2 &= (a+b)(a+b) \\
-        &= a^2 + ab + ba + b^2 \\
-        &= a^2 + 2ab + b^2
+$`\eqalign{ t_{\mathrm{TTC}} &=
+-\frac{\tilde{p}_{x, 0}}{\tilde{v}_{x, 0}}, & \tilde{v}_{x, 0}<0 \quad \text{and} \quad \tilde{a}_{x, 0}=0, \\
+-\frac{\tilde{v}_{x, 0}}{\tilde{a}_{x, 0}-\frac{\sqrt{\tilde{v}_{x, 0}-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0}}}{\tilde{a}_{x, 0}}}, & \tilde{v}_{x, 0}<0 \quad \text{and} \quad \tilde{a}_{x, 0} \neq 0, \\
+-\frac{\tilde{v}_{x, 0}}{\tilde{a}_{x, 0}}+\frac{\sqrt{\tilde{v}_{x, 0}^2-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0}}}{\tilde{a}_{x, 0}}, & \tilde{v}_{x, 0} \geq 0 \quad \text{and} \quad \tilde{a}_{x, 0}<0, \\
+\text{Undefined}, & \tilde{v}_{x, 0} \geq 0 \quad \text{and} \quad \tilde{a}_{x, 0} \geq 0, \\
+\text{Undefined}, & \tilde{v}_{x, 0}^2-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0} < 0 .
 }`$
 
 
