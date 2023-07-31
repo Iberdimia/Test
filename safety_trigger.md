@@ -14,7 +14,7 @@ Required Longitudinal Acceleration (ALongReq) is a metric that measures the maxi
 $`a_{\text{long, req}}(A_1, A_2, t)=\text{sol}_{a_x}\left[
 \left(\tilde{p}_x(t) \quad \tilde{v}_x(t)\right)^T= \left(0 \quad 0\right)^T\right]`$
 
-In simpler terms, it calculates the maximum acceleration (negative) needed by A_1 to avoid a collision with A_2 in the future, assuming that A_1 and A_2 continue their current paths and velocities.
+In simpler terms, it calculates the maximum acceleration (negative) needed by $A_1$ to avoid a collision with $A_2$ in the future, assuming that $A_1$ and $A_2$ continue their current paths and velocities.
 
 When considering constant acceleration, the ALongReq can be calculated as follows:
 
