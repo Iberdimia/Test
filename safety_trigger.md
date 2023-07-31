@@ -24,7 +24,7 @@ $`\eqalign{
 0&=\tilde{p}_{x, 0}+\tilde{v}_{x, 0} t+\frac{\tilde{a}_{\text{long, req}} t^2}{2}
 }`$
 
-When considering constant acceleration, the ALongReq can be calculated as follows:
+This yields the constant acceleration required to avoid a collision, according to:
 
 $`a_{\text{long, req}}(A_1, A_2, t) = \min \left( a_{2, \text{long}} + \frac{(v_{1, \text{long}}(t) - v_{2, \text{long}}(t))^2}{2d(p_1(t), p_2(t))}, 0 \right)`$
 
