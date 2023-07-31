@@ -16,7 +16,7 @@ $`a_{\text{long, req}}(A_1, A_2, t)=\text{sol}_{a_x}\left[
 
 In simpler terms, it calculates the maximum acceleration (negative) needed by A_1 to avoid a collision with A_2 in the future, assuming that A_1 and A_2 continue their current paths and velocities.
 
-For constant acceleration scenarios, the concept of ALongReq is also known as Deceleration Rate To Avoid Crash (DRAC). When considering constant acceleration, the ALongReq can be calculated as follows:
+When considering constant acceleration, the ALongReq can be calculated as follows:
 
 $$a_{\text{long, req}}(A_1, A_2, t) = \min \left( a_{2, \text{long}} + \frac{(v_{1, \text{long}}(t) - v_{2, \text{long}}(t))^2}{2d(p_1(t), p_2(t))}, 0 \right)$$
 
