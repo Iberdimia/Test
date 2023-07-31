@@ -11,7 +11,7 @@ This document outlines two key safety metrics used for triggering a recording wh
 
 Required Longitudinal Acceleration (ALongReq) is a metric that measures the maximum longitudinal backward acceleration required, on average, by one actor ($A_1$) to avoid a collision with another actor ($A_2$) in the future. This comes down to measuring the longitudinal acceleration required to bring the relative velocity to zero at the time of the collision. This can be formalized as follows:
 
-$`\eqalign{a_{\text{long, req}}(A_1, A_2, t)=\text{sol}_{a_x}\left[
+$`\eqalign{a_{\text{long, req}}(A_1, A_2, t)&=\text{sol}_{a_x}\left[
 \left(\tilde{p}_x(t) & \tilde{v}_x(t)
 \end{array}\right)^T= \left(0 & 0\right)^T\right\]}`$
 
