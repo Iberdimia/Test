@@ -20,7 +20,7 @@ In simpler terms, it calculates the maximum acceleration (negative) needed by $A
 $`\text{sol}_{a_{\text{long, req}}}\{\cdots\}`$ denotes the solution with respect to the host vehicle acceleration where $`\tilde{p}_x(t) \geq 0`$ for all $`t`$. With the assumption of constant acceleration the solution to is given by solving the equation system :
 
 $`\eqalign{
-0&=\tilde{v}_{x, 0}+\tilde{a}__{\text{long, req}} t \\
+0&=\tilde{v}_{x, 0}+\tilde{a}_{\text{long, req}} t \\
 0&=\tilde{p}_{x, 0}+\tilde{v}_{x, 0} t+\frac{\tilde{a}_{\text{long, req}} t^2}{2}
 }`$
 
