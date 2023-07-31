@@ -15,7 +15,7 @@ $$a_{\text{long, req}}(A_1, A_2, t)=\text{sol}_{a_{\text{long, req}}}\left[
 \left(\tilde{p}_x(t) \quad \tilde{v}_x(t)\right)^T= \left(0 \quad 0\right)^T\right]$$
 
 In simpler terms, it calculates the maximum acceleration (negative) needed by $A_1$ to avoid a collision with $A_2$ in the future, assuming that $A_1$ and $A_2$ continue their current paths and velocities.
-$`\text{sol}_{a_{\text{long, req}}}\{\cdots\}`$ denotes the solution with respect to the host vehicle acceleration where $\tilde{p}_x(t) \geq 0$ for all $t$. With the assumption of constant acceleration the solution to is given by solving the equation system
+$`\text{sol}_{a_{\text{long, req}}}\{\cdots\}`$ denotes the solution with respect to the host vehicle acceleration where $`\tilde{p}_x(t) \geq 0`$ for all $`t`$. With the assumption of constant acceleration the solution to is given by solving the equation system :
 $$
 \left\{\begin{array}{l}
 0=\tilde{v}_{x, 0}+\tilde{a}__{\text{long, req}} t \\
