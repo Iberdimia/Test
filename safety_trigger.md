@@ -26,7 +26,7 @@ $`\eqalign{
 
 This yields the constant acceleration required to avoid a collision, according to:
 
-$`a_{\text{long, req}}(A_1, A_2, t) = \min \left( a_{2, \text{long}} + \frac{(v_{1, \text{long}}(t) - v_{2, \text{long}}(t))^2}{2d(p_1(t), p_2(t))}, 0 \right)`$
+$`a_{\text{long, req}}(A_1, A_2, t) = \min \left( a_{2, \text{long}} - \frac{(v_{1, \text{long}}(t) - v_{2, \text{long}}(t))^2}{2d(p_1(t), p_2(t))}, 0 \right)`$
 
 Where:
 - $a_{1, \text{long}}$ and $a_{2, \text{long}}$ are the longitudinal accelerations of actors $A_1$ and $A_2$, respectively.
