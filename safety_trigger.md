@@ -18,10 +18,10 @@ a_{\text{long, req}}(A_1, A_2, t)=\text{sol}_{a_{\text{long, req}}}\left[
 
 In simpler terms, it calculates the maximum acceleration (negative) needed by $A_1$ to avoid a collision with $A_2$ in the future, assuming that $A_1$ and $A_2$ continue their current paths and velocities.
 $`\text{sol}_{a_{\text{long, req}}}\{\cdots\}`$ denotes the solution with respect to the host vehicle acceleration where $`\tilde{p}_x(t) \geq 0`$ for all $`t`$. With the assumption of constant acceleration the solution to is given by solving the equation system :
-$$
+$`
 0=\tilde{v}_{x, 0}+\tilde{a}__{\text{long, req}} t \\
 0=\tilde{p}_{x, 0}+\tilde{v}_{x, 0} t+\frac{\tilde{a}_{\text{long, req}} t^2}{2}
-$$
+`$
 
 When considering constant acceleration, the ALongReq can be calculated as follows:
 
