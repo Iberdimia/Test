@@ -43,11 +43,11 @@ $$0 = \tilde{p}{x, 0} + \tilde{v}{x, 0} t + \frac{\tilde{a}_{x, 0} t^2}{2}$$
 The solution for $t_{\mathrm{TTC}}$ is given by:
 
 $`\eqalign{ t_{\mathrm{TTC}} 
-&=-\frac{\tilde{p}_{x, 0}}{\tilde{v}_{x, 0}}, with \qquad \tilde{v}_{x, 0}<0 \quad \text{and} \quad \tilde{a}_{x, 0}=0, \\
-&=-\frac{\tilde{v}_{x, 0}}{\tilde{a}_{x, 0}-\frac{\sqrt{\tilde{v}_{x, 0}-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0}}}{\tilde{a}_{x, 0}}}, with \qquad  \tilde{v}_{x, 0}<0 \quad \text{and} \quad \tilde{a}_{x, 0} \neq 0\\
-&=-\frac{\tilde{v}_{x, 0}}{\tilde{a}_{x, 0}}+\frac{\sqrt{\tilde{v}_{x, 0}^2-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0}}}{\tilde{a}_{x, 0}}, with \qquad \tilde{v}_{x, 0} \geq 0 \quad \text{and} \quad \tilde{a}_{x, 0}<0 \\
-&=\text{Undefined}, with \qquad \tilde{v}_{x, 0} \geq 0 \quad \text{and} \quad \tilde{a}_{x, 0} \geq 0 \\ 
-&=\text{Undefined}, with \qquad \tilde{v}_{x, 0}^2-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0} < 0 
+&=-\frac{\tilde{p}_{x, 0}}{\tilde{v}_{x, 0}},\quad with \quad \tilde{v}_{x, 0}<0 \quad \text{and} \quad \tilde{a}_{x, 0}=0, \\
+&=-\frac{\tilde{v}_{x, 0}}{\tilde{a}_{x, 0}-\frac{\sqrt{\tilde{v}_{x, 0}-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0}}}{\tilde{a}_{x, 0}}},\quad with \quad  \tilde{v}_{x, 0}<0 \quad \text{and} \quad \tilde{a}_{x, 0} \neq 0\\
+&=-\frac{\tilde{v}_{x, 0}}{\tilde{a}_{x, 0}}+\frac{\sqrt{\tilde{v}_{x, 0}^2-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0}}}{\tilde{a}_{x, 0}},\quad with \quad \tilde{v}_{x, 0} \geq 0 \quad \text{and} \quad \tilde{a}_{x, 0}<0 \\
+&=\text{Undefined}, \quad with \quad \tilde{v}_{x, 0} \geq 0 \quad \text{and} \quad \tilde{a}_{x, 0} \geq 0 \\ 
+&=\text{Undefined}, \quad with \quad \tilde{v}_{x, 0}^2-2 \tilde{p}_{x, 0} \tilde{a}_{x, 0} < 0 
 }`$
 
 
