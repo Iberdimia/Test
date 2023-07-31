@@ -63,8 +63,7 @@ $`\eqalign{ t_{\mathrm{TTC}}
 Thus, $t_{\mathrm{TTC}}$ is given by the smallest positive solution. 
 If $`\tilde{v}_{x, 0}^2 - 2 \tilde{p}_{x, 0}\tilde{a}_{x, 0} < 0`$ or $`(\tilde{v}_{x, 0} \geq 0`$ and $`\tilde{a}_{x, 0} \geq 0)`$, no solution exists. This means that the velocity and acceleration are such that no collision occurs.
 
-Please note that for some cases where the relative velocity or acceleration values are such that no collision is expected, no solution exists for the TTC calculation.
-In some cases the TTC is negative if the preceding vehicle's speed is higher than that of the following vehicle. In this case, there is no crash risk.
+Please note that for some cases the TTC is negative if the preceding vehicle's speed is higher than that of the following vehicle. In this case, there is no crash risk.
 
 ## Conclusion
 
