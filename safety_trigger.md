@@ -39,8 +39,8 @@ When calculating the time to collision, the relative acceleration is often assum
 
 $$0 = \tilde{p}{x, 0} + \tilde{v}{x, 0} t + \frac{\tilde{a}_{x, 0} t^2}{2}$$
 
-where $\tilde{p}{x, 0}$ is the relative distance, $\tilde{v}{x, 0}$ is the relative velocity and $\tilde{a}_{x, 0}$ the relative acceleration.
-The solution for $t_{\mathrm{TTC}}$ is given by:
+where $`\tilde{p}{x, 0}`$ is the relative distance, $`\tilde{v}{x, 0}`$ is the relative velocity and $`\tilde{a}_{x, 0}`$ the relative acceleration.
+The solution for $`t_{\mathrm{TTC}}`$ is given by:
 
 $`\eqalign{ t_{\mathrm{TTC}} 
 &=-\frac{\tilde{p}_{x, 0}}{\tilde{v}_{x, 0}},\quad if \quad \tilde{v}_{x, 0}<0 \quad \text{and} \quad \tilde{a}_{x, 0}=0, \\
