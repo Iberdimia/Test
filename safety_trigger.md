@@ -11,15 +11,15 @@ This document outlines two key safety metrics used for triggering a recording wh
 
 Required Longitudinal Acceleration (ALongReq) is a metric that measures the maximum longitudinal backward acceleration required, on average, by one actor ($A_1$) to avoid a collision with another actor ($A_2$) in the future. This comes down to measuring the longitudinal acceleration required to bring the relative velocity to zero at the time of the collision. This can be formalized as follows:
 
-$$a_{\text{long, req}}(A_1, A_2, t)=\text{sol}_{a_x}\left[
+$$a_{\text{long, req}}(A_1, A_2, t)=\text{sol}_{a_{\text{long, req}}}\left[
 \left(\tilde{p}_x(t) \quad \tilde{v}_x(t)\right)^T= \left(0 \quad 0\right)^T\right]$$
 
 In simpler terms, it calculates the maximum acceleration (negative) needed by $A_1$ to avoid a collision with $A_2$ in the future, assuming that $A_1$ and $A_2$ continue their current paths and velocities.
-where $\operatorname{sol}_{a_x^{\text {host }}}\{\cdots\}$ denotes the solution with respect to the host vehicle acceleration $a_x^{\text {host }}$ where $\tilde{p}_x(t) \geq 0$ for all $t$. With the assumption of constant acceleration the solution to is given by solving the equation system
+$`\text{sol}_{a_{\text{long, req}}}\{\cdots\}`$ denotes the solution with respect to the host vehicle acceleration where $\tilde{p}_x(t) \geq 0$ for all $t$. With the assumption of constant acceleration the solution to is given by solving the equation system
 $$
 \left\{\begin{array}{l}
-0=\tilde{v}_{x, 0}+\tilde{a}_x t \\
-0=\tilde{p}_{x, 0}+\tilde{v}_{x, 0} t+\frac{\tilde{a}_x t^2}{2}
+0=\tilde{v}_{x, 0}+\tilde{a}__{\text{long, req}} t \\
+0=\tilde{p}_{x, 0}+\tilde{v}_{x, 0} t+\frac{\tilde{a}_{\text{long, req}} t^2}{2}
 \end{array}\right.
 $$
 
