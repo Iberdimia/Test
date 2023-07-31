@@ -63,7 +63,7 @@ If $`\tilde{v}_{x, 0}^2 - 2 \tilde{p}_{x, 0}\tilde{a}_{x, 0} < 0`$ or $`(\tilde{
 
 Please note that for some cases, in this formalisation of TTC, the value is negative if the preceding vehicle's speed is higher than that of the following vehicle. In this case, there is no crash risk.
 
-Note: For comparison the classical definition of the TTC (i.e. `$\frac{\tilde{p}_{x, 0}}{|\tilde{v}_{x, 0}|}`$  
+Note: For comparison the classical definition of the TTC (i.e. $`\frac{\tilde{p}_{x, 0}}{|\tilde{v}_{x, 0}|}`$  
 ## Conclusion
 
 Both Required Longitudinal Acceleration (ALongReq) and Time To Collision (TTC) are essential safety metrics used to determine if a vehicle is in a dangerous state with respect to potential collisions.
