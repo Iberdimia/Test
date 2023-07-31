@@ -31,13 +31,12 @@ It calculates the time required for two vehicles ($A_1$ and $A_2$) to collide if
 
 The time to collision $\(t_{\mathrm{TTC}}\)$ is defined as follows:
 
-$$`
+$`
 t_{\mathrm{TTC}} = \text{sol}_t\left[ \tilde{p}_x(t) = 0 \right]
-`$$
+`$
 
 When calculating the time to collision, the relative acceleration is often assumed to be constant. With a constant acceleration decision model of the vehicle's motion, the solution to equation above reduces to solving:
-
-$$0 = \tilde{p}_{x, 0} + \tilde{v}_{x, 0} t + \frac{\tilde{a}_{x, 0} t^2}{2}$$
+$`0 = \tilde{p}_{x, 0} + \tilde{v}_{x, 0} t + \frac{\tilde{a}_{x, 0} t^2}{2}`$
 
 where $`\tilde{p}_{x, 0}`$ is the relative distance, $`\tilde{v}_{x, 0}`$ is the relative velocity and $`\tilde{a}_{x, 0}`$ the relative acceleration.
 The solution for $`t_{\mathrm{TTC}}`$ is given by:
