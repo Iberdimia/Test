@@ -22,8 +22,7 @@ $$a_{\text{long, req}}(A_1, A_2, t) = \min \left( a_{2, \text{long}} + \frac{(v_
 Where:
 - $a_{1, \text{long}}$ and $a_{2, \text{long}}$ are the longitudinal accelerations of actors $A_1$ and $A_2$, respectively.
 - $v_{1, \text{long}}(t)$ and $v_{2, \text{long}}(t)$ are the longitudinal velocities of $A_1$ and $A_2$ at time $t$, respectively.
-- $d(p_1(t), p_2(t))$ is the distance between $A_1$ and $A_2$ at time $t$.
-
+- $d(p_1(t), p_2(t))$ is the distance between $`A_1`$ and $`A_2`$ at time $t$.
 
 ## Metric 2: Time To Collision (TTC)
 
@@ -40,6 +39,7 @@ When calculating the time to collision, the relative acceleration is often assum
 
 $$0 = \tilde{p}{x, 0} + \tilde{v}{x, 0} t + \frac{\tilde{a}_{x, 0} t^2}{2}$$
 
+where $\tilde{p}{x, 0}$ is the relative distance, $\tilde{v}{x, 0}$ is the relative velocity and $\tilde{a}_{x, 0}$ the relative acceleration.
 The solution for $t_{\mathrm{TTC}}$ is given by:
 
 $`\eqalign{ t_{\mathrm{TTC}} 
