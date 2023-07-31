@@ -11,15 +11,15 @@ This document outlines two key safety metrics used for triggering a recording wh
 
 Required Longitudinal Acceleration (ALongReq) is a metric that measures the maximum longitudinal backward acceleration required, on average, by one actor ($A_1$) to avoid a collision with another actor ($A_2$) in the future. This comes down to measuring the longitudinal acceleration required to bring the relative velocity to zero at the time of the collision. This can be formalized as follows:
 
-$$a_{\text{long, req}}(A_1, A_2, t)=\text{sol}_{a_x}\left[
+$`\eqalign{a_{\text{long, req}}(A_1, A_2, t)=\text{sol}_{a_x}\left[
 \left(\tilde{p}_x(t) & \tilde{v}_x(t)
-\end{array}\right)^T= \left(0 & 0\right)^T\right\],$$
+\end{array}\right)^T= \left(0 & 0\right)^T\right\]}`$
 
 In simpler terms, it calculates the maximum acceleration (negative) needed by A_1 to avoid a collision with A_2 in the future, assuming that A_1 and A_2 continue their current paths and velocities.
 
 For constant acceleration scenarios, the concept of ALongReq is also known as Deceleration Rate To Avoid Crash (DRAC). When considering constant acceleration, the ALongReq can be calculated as follows:
 
-$`\eqalign{a_{\text{long, req}}(A_1, A_2, t) = \min \left( a_{2, \text{long}} + \frac{(v_{1, \text{long}}(t) - v_{2, \text{long}}(t))^2}{2d(p_1(t), p_2(t))}, 0 \right)}`$
+$$a_{\text{long, req}}(A_1, A_2, t) = \min \left( a_{2, \text{long}} + \frac{(v_{1, \text{long}}(t) - v_{2, \text{long}}(t))^2}{2d(p_1(t), p_2(t))}, 0 \right)$$
 
 Where:
 - $a_{1, \text{long}}$ and $a_{2, \text{long}}$ are the longitudinal accelerations of actors $A_1$ and $A_2$, respectively.
