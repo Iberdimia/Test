@@ -75,3 +75,5 @@ By monitoring these metrics and comparing them to predefined thresholds, it beco
 - Jansson, J. (2005). Collision Avoidance Theory: With application to automotive collision mitigation (Doctoral dissertation, Linköping University Electronic Press).
 - Lin, Yuanfei, and Matthias Althoff. "CommonRoad-CriMe: A toolbox for criticality measures of autonomous vehicles." 2023 IEEE Intelligent Vehicles Symposium (IV). 2023.
 - https://criticality-metrics.readthedocs.io/
+
+- test 
