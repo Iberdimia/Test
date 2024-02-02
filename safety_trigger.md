@@ -1,7 +1,7 @@
 # Vehicle Safety Metrics for Triggering Recordings
 
 ## Introduction
-
+Coucou
 This document outlines two key safety metrics used for triggering a recording when a vehicle is in a "dangerous longitudinal state." The dangerous state is defined based on two metrics to assess the collision state of the lanes:
 
 1. Required Longitudinal Acceleration (ALongReq)
