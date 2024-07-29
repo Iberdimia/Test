@@ -77,3 +77,84 @@ By monitoring these metrics and comparing them to predefined thresholds, it beco
 - https://criticality-metrics.readthedocs.io/
 
 - test Z
+
+#######################################################################
+To summarize the provided Python code into equations, we'll extract the main calculations and control logic expressed in mathematical terms. The code primarily deals with longitudinal control for an autonomous vehicle, focusing on maintaining safe distances, managing speeds, and optimizing for smooth acceleration and braking. Here are the main equations and functions translated from the code:
+
+### Parameters and Constants
+- \( G \): Gravitational constant
+- \( N = 12 \): Number of prediction steps
+- \( \text{MAX\_T} = 20.0 \): Maximum prediction time
+- \( T_{\text{IDXs}} \): Array of time indices over the prediction horizon
+- \( T_{\text{DIFFs}} \): Differences in \( T_{\text{IDXs}} \)
+- Various cost constants for different states and control inputs
+
+### Functions
+1. **Coasting Acceleration**:
+   \[
+   a_{\text{coast}}(v_{\text{ego}}, \alpha, \text{friction}, \text{drag}, c_0) = \sin(\alpha)G + \cos(\alpha)G \cdot \text{friction} + \text{drag} \cdot v_{\text{ego}}^2 + c_0 \cdot v_{\text{ego}}
+   \]
+
+2. **Distance Offset**:
+   \[
+   \text{dist\_offset}(v_{\text{ego}}, v_{\text{lead}}, a) = \frac{v_{\text{ego}}^2 - v_{\text{lead}}^2}{2a} - \left(\frac{v_{\text{ego}} - v_{\text{lead}}}{a}\right) \cdot v_{\text{lead}}
+   \]
+
+3. **Maximum Time Follow Offset**:
+   \[
+   \text{max\_t\_follow\_offset}(v, a_{\text{coast}}) = \frac{a_{\text{coast}} \cdot t_{\text{max}}^2}{v + 1.0} \quad \text{where } t_{\text{max}} = 10.0
+   \]
+
+4. **Static Distance**:
+   \[
+   \text{static\_distance}(v_{\text{ego}}, t_{\text{dist}}, \text{stop\_dist}) = v_{\text{ego}} \cdot t_{\text{dist}} + \text{stop\_dist}
+   \]
+
+### Model Dynamics
+- State vector: \( \mathbf{x} = [x_{\text{ego}}, v_{\text{ego}}, a_{\text{ego}}] \)
+- Control input: \( \mathbf{u} = [j_{\text{ego}}] \)
+- Dynamics model: 
+  \[
+  \mathbf{\dot{x}} = \begin{bmatrix} v_{\text{ego}} \\ a_{\text{ego}} \\ j_{\text{ego}} \end{bmatrix}
+  \]
+
+### Cost Function
+The cost function is designed to minimize the deviation from desired states and control inputs:
+\[
+\text{cost} = \sum_{i=0}^{N-1} \left[ \frac{(x_{\text{obstacle}} - x_{\text{ego}} - \text{desired\_follow\_distance})}{v_{\text{ego}} + 10} \right]^2 + \left[ \frac{a_{\text{ego}} + a_{\text{coast}}}{v_{\text{ego}} + 10} \right]^2 + 20(a_{\text{ego}} - \text{prev\_a})^2 + j_{\text{ego}}^2
+\]
+
+### Constraints
+1. **Speed and Acceleration Limits**:
+   \[
+   \begin{cases}
+   v_{\text{ego}} \\
+   a_{\text{ego}} - a_{\min} \\
+   a_{\max} - a_{\text{ego}} \\
+   \frac{(x_{\text{obstacle}} - x_{\text{ego}} - \text{start\_braking\_dist})}{v_{\text{ego}} + 10} \\
+   \text{decel}^3 + \frac{a_{\text{ego}} + a_{\text{coast}}}{\sqrt{(a_{\text{ego}} + a_{\text{coast}})^2 + 1}} \\
+   \frac{(x_{\text{obstacle}} - x_{\text{ego}} - \text{stop\_distance})}{v_{\text{ego}} + 10} \\
+   a_{\text{ego}} \cdot v_{\text{lead\_relation}}
+   \end{cases}
+   \]
+
+2. **Maximum Deceleration**:
+   \[
+   \text{decel} = \frac{a_{\text{ego}} + a_{\text{coast}}}{-a_{\min\_limit} - \text{MPC\_A\_COAST\_MAX\_OFFSET} - a_{\text{coast}}}
+   \]
+
+### Extrapolation
+1. **Lead Vehicle**:
+   \[
+   \text{lead\_xv}(x_{\text{lead}}, v_{\text{lead}}, a_{\text{lead}}, a_{\text{lead\_tau}}) = \left[ \text{cumsum}(T_{\text{DIFFs}} \cdot v_{\text{lead\_traj}}), \text{cumsum}(T_{\text{DIFFs}} \cdot a_{\text{lead\_traj}}) \right]
+   \]
+
+2. **Ego Vehicle**:
+   \[
+   \text{ego\_traj}(v_{\text{ego}}, a_{\min}) = \left[ \text{cumsum}(T_{\text{DIFFs}} \cdot v_{\text{ego\_traj}}), \text{cumsum}(T_{\text{DIFFs}} \cdot a_{\text{ego\_traj}}) \right]
+   \]
+
+### Combining and Selection
+The obstacle selection and source determination use a combination of the above distances and velocities to select the appropriate source (cruise, lead, curvature) and compute the desired trajectories for the ego vehicle.
+
+This provides a comprehensive overview of the mathematical formulations and logical steps involved in the given Python code for longitudinal control of an autonomous vehicle.
